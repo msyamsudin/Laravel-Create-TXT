@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pengguna extends Migration
+class Pengguna2 extends Migration
 {
     /**
      * Run the migrations.
@@ -17,6 +17,10 @@ class Pengguna extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('tgl_lahir');
+            $table->string('telepon');
+            $table->string('gender');
+            $table->string('alamat');
         });
     }
 

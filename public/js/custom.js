@@ -1,5 +1,5 @@
 $( function() {
-    $( "#inDatepicker" ).datepicker();
+    $( ".indatepicker" ).datepicker();
   } );
 
 function reset_btn(){

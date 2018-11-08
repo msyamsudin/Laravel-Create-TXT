@@ -5,5 +5,5 @@ view pengguna
 @endsection
 
 @section('konten')
-konten
+konten nih
 @endsection

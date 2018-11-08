@@ -18,42 +18,9 @@
 
 </head>
 <body>
-    <br />
-        <center><h1>Form Data Diri</h1></center>
-    <br />
     <div class="container">
-    <form>
-    <div class="form-group">
-      <label>Nama</label>
-      <input type="text" class="form-control" id="inName" placeholder="Nama anda" required>
-   </div>
-
-  <div class="form-group">
-    <label>Email</label>
-    <input type="email" class="form-control" id="inEmail" placeholder="name@example.com" required>
-  </div>
-
-  <div class="form-group">
-      <label>Date of birth</label>
-      <input type="text" class="form-control" id="inDatepicker" placeholder="" required>
-   </div>
-
-  <div class="form-group">
-    <label>Gender</label>
-    <select class="form-control" id="inGender" required>
-      <option value="">-- Pilih satu --</option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label>Alamat</label>
-    <textarea class="form-control" id="inAlamat" rows="3" required></textarea>
-  </div>
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button onclick="reset_btn()" type="button" class="btn btn-secondary">Reset</button>
-</form>
+      <a href="{{ url('pengguna/create') }}" class="btn btn-primary">Tambah Data</a>
     </div>
+    @yield('konten')
 </body>
 </html>
