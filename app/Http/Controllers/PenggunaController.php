@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Pengguna;
+use Storage;
 
 class PenggunaController extends Controller
 {
@@ -17,7 +18,17 @@ class PenggunaController extends Controller
     }
 
     public function store(Request $request){
-        Pengguna::create($request->all());
+        $waktu = \Carbon\Carbon::now();
+        $sekarang = $waktu->format('dmYHis');
+
+        $input = $request->all();
+        $name = $request->input('inname');
+        // $mail = $request->input('inemail');
+        Storage::put('/app/'.$name.'-'.$sekarang.'.txt',$input);
+
+        // Pengguna::create($request->all());
+
+        
         return "tersimpan";
     }
 }
