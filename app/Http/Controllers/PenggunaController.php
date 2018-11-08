@@ -22,13 +22,13 @@ class PenggunaController extends Controller
         $sekarang = $waktu->format('dmYHis');
 
         $input = $request->all();
+        $inputnew = $input['inname'].','.$input['inemail'].','.$input['intgl_lahir'].','.$input['intelepon'].','.$input['ingender'].','.$input['inalamat'];
+        
         $name = $request->input('inname');
-        // $mail = $request->input('inemail');
-        Storage::put('/app/'.$name.'-'.$sekarang.'.txt',$input);
+    
+        Storage::put('/app/'.$name.'-'.$sekarang.'.txt',$inputnew);
 
         // Pengguna::create($request->all());
-
-        
         return "tersimpan";
     }
 }
