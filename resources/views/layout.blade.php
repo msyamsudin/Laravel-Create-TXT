@@ -18,9 +18,15 @@
 
 </head>
 <body>
+    <br>
+        <div class="container btn-group">
+            <a href="{{ url('pengguna') }}" class="btn btn-primary">Beranda</a>
+            <a href="{{ url('pengguna/create') }}" class="btn btn-primary">Tambah Data</a>
+        </div>
+    <br>
     <div class="container">
-      <a href="{{ url('pengguna/create') }}" class="btn btn-primary">Tambah Data</a>
+      @yield('konten')
     </div>
-    @yield('konten')
+    
 </body>
 </html>
