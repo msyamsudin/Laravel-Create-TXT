@@ -30,15 +30,20 @@ Beranda
             <td> {{ $dt->ingender }} </td>
             <td> {{ $dt->inalamat }} </td>
             <td>
-              <div class="btn-group">
+            <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group btn-group-sm">
                 <a href="{{ url('pengguna/'.$dt->innameid) }}" class='btn btn-secondary'>Detail</a>
-                <a href="{{ url('pengguna/'.$dt->innameid.'/edit') }}" class='btn btn-secondary'>Edit</a>
+                <a href="{{ url('pengguna/'.$dt->innameid.'/edit') }}" class='btn btn-secondary'> Edit</a>
+              </div>
+
+              <div class="btn-group">
                 <form action="{{ url('pengguna/'.$dt->id) }}" method="post">
                   {{ csrf_field() }}
                   <input type="hidden" name="_method" value="DELETE">
-                  <button type="submit" class="btn btn-danger">Hapus</button>
+                  <button type="submit" class="btn btn-danger fas fa-trash"></button>
                 </form>
               </div>
+            </div>
             </td>
         </tr>
     @endforeach
