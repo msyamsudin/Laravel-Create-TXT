@@ -9,6 +9,7 @@
     <!-- css jquery-ui and bootstrap -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('jquery-ui/jquery-ui.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     <!-- css fontawesome 5.5.0 -->
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
