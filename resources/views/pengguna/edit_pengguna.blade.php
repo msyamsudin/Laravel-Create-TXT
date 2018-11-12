@@ -33,7 +33,10 @@ Edit Data pengguna
      </div>
 
     <div class="form-group">
-      <label>Gender : <b>{{ $data[0]['ingender'] }}</b></label> <a href="#" class="btn btn-dark btn-sm btn-gender">Ubah ?</a>
+      <label>Gender : <b>{{ $data[0]['ingender'] }}</b></label>
+        <div class="col-xs-2">
+          <input class="btn btn-dark btn-sm btn-gender" value="Ubah ?" readonly>
+        </div>
       <select class="form-control ingender" name="ingender" id="ingender" style="display:none;">
         <option value="{{ $data[0]['ingender'] }}">-- Pilih satu --</option>
         <option value="male">Male</option>
