@@ -18,7 +18,6 @@
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('jquery-ui/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('fontawesome/js/all.min.js') }}"></script>
 
 </head>
 <body>
