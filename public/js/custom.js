@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".btn-gender").click(function(){
         $(".ingender").toggle(500);
-    });
+    }); 
 });
 
 $( function() {
