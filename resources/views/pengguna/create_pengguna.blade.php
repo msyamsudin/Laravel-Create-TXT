@@ -6,8 +6,6 @@ Create pengguna
 
 @section('konten')
 <br />
-        <center><h1>Form Data Diri</h1></center>
-    <br />
     <div class="container col-md-6">
     <form action="{{ url('pengguna') }}" method="post">
     {{ csrf_field() }}

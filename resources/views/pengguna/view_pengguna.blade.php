@@ -6,8 +6,6 @@ Beranda
 
 @section('konten')
 <br />
-<center><h1>Data Pengguna</h1></center>
-<br />
 <table class="table table-hover text-center col-lg-10">
   <thead>
     <tr>
@@ -31,10 +29,10 @@ Beranda
                 </div>
 
                 <div class="btn-group">
-                  <form action="{{ url('pengguna/'.$dt->id) }}" method="post">
+                  <form id="frm-hapus" action="{{ url('pengguna/'.$dt->id) }}" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="btn btn-danger fas fa-trash"></button>
+                    <button type="button" class="btn btn-danger fas fa-trash btn-hapus"></button>
                   </form>
                 </div>
             </div>
@@ -43,4 +41,10 @@ Beranda
     @endforeach
   </tbody>
 </table>
+
+<div id="konfirmasi-hapus" title="Hapus data" style="display: none;">
+  <p>
+    Anda akan menghapus data ini, lanjutkan?
+  </p>
+</div>
 @endsection

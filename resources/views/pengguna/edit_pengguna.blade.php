@@ -6,8 +6,6 @@ Edit Data pengguna
 
 @section('konten')
 <br />
-        <center><h1>Edit Data Pengguna</h1></center>
-    <br />
     <div class="container col-md-6">
     <form action="{{ url('pengguna/'.$data[0]['innameid']) }}" method="post">
     <input type="hidden" name="_method" value="put">

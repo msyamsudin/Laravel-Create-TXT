@@ -6,8 +6,6 @@ Detail pengguna
 
 @section('konten')
 <br />
-        <center><h1>Data Pengguna</h1></center>
-    <br />
     <div class="container col-md-6">
     <form>
       <div class="form-group row">
