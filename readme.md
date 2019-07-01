@@ -30,5 +30,5 @@ Silahkan klik link dibawah untuk mengunduh database.
 - Jalankan "php artisan serve" pada lokasi project berada
 - Akses aplikasi ini pada browser dengan mengetikkan, http://localhost:8000/pengguna/
 
-## Herokuapp link:
+## Contoh aplikasi:
 http://serene-sea-99621.herokuapp.com/pengguna
